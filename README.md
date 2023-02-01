@@ -14,3 +14,5 @@ After git clone run
 Run
 
 - npm start
+
+In your browser go to http://localhost:3000
