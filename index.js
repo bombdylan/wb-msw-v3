@@ -15,13 +15,13 @@ server.listen(PORT, () => console.log(`Server running on port ${PORT}`))
 
 const client = mqtt.connect('mqtt://82.208.107.202')
 
-client.on('connect', function () {
+client.on('connect', () => {
   client.subscribe('/devices/wb-msw-v3_54/controls/#', function (err) {
     console.log('subcribed')
   })
 })
 
-client.on('message', function (topic, message) {
+client.on('message', (topic, message) => {
   param = topic.split('/').pop()
   obj = { param: param, value: message.toString() }
   console.log(obj)
