@@ -22,8 +22,7 @@ client.on('connect', function () {
 })
 
 client.on('message', function (topic, message) {
-  param = topic.split('/')
-  param = param[param.length - 1]
+  param = topic.split('/').pop()
   obj = { param: param, value: message.toString() }
   console.log(obj)
   io.emit('message', obj)
