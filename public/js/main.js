@@ -2,7 +2,6 @@ const illum = document.getElementById('Illuminance')
 const co2 = document.getElementById('CO2')
 
 const socket = io()
-socket.emit('join', { message: 'hi. it came from join over ws' })
 
 socket.on('message', ({ param, value }) => {
   if (param === 'Illuminance') {
