@@ -6,13 +6,16 @@ Real-time data online from wb-msw-v3 sensor
 
 After git clone run
 
-- npm install
-  in project root
+`npm install`
+
+in your project root folder
 
 ## Usage
 
 Run
 
-- npm start
+`npm start`
+
+to start backend part
 
 In your browser go to http://localhost:3000
