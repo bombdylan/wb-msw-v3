@@ -16,7 +16,7 @@ server.listen(PORT, () => console.log(`Server running on port ${PORT}`))
 const client = mqtt.connect('mqtt://82.208.107.202')
 
 client.on('connect', () => {
-  client.subscribe('/devices/wb-msw-v3_54/controls/#', function (err) {
+  client.subscribe('/devices/wb-msw-v3_54/controls/#', (err) => {
     console.log('subcribed')
   })
 })
