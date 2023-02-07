@@ -8,8 +8,48 @@
     <title>WB-MSW-V3 sensor</title>
   </head>
   <body>
-    <h1 id="Illuminance">N/A</h1>
-    <h1 id="CO2">N/A</h1>
+    <table class="table">
+      <thead>
+
+        <th>Показатель</th>
+        <th>Значение</th>
+
+      </thead>
+      <tbody>
+        <tr>
+          <td>Температура</td>
+          <td id="Temperature">N/A</td>
+        </tr>
+        <tr>
+          <td>Влажность</td>
+          <td id="Humidity">N/A</td>
+        </tr>
+        <tr>
+          <td>Уровень СО2</td>
+          <td id="CO2">N/A</td>
+        </tr>
+        <tr>
+          <td>Качество воздуха VOC</td>
+          <td id="AirQuality">N/A</td>
+        </tr>
+        <tr>
+          <td>Уровень шума</td>
+          <td id="SoundLevel">N/A</td>
+        </tr>
+        <tr>
+          <td>Освещенность</td>
+          <td id="Illuminance">N/A</td>
+        </tr>
+        <tr>
+          <td>Макс. Движение</td>
+          <td id="MaxMotion">N/A</td>
+        </tr>
+        <tr>
+          <td>Текущее движение</td>
+          <td id="CurrentMotion">N/A</td>
+        </tr>
+      </tbody>
+    </table>
     <script src="/socket.io/socket.io.js"></script>
     <script src="js/main.js"></script>
   </body>
